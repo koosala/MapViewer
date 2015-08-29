@@ -1,0 +1,14 @@
+﻿<Window x:Class="MapViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="Left" Width="100"/>
+            <ColumnDefinition Name="Middle" Width="*"/>
+            </Grid.ColumnDefinitions>
+        <Button Name="BtnShowMap" Grid.Column="0" Click="BtnShowMap_Click">Show Map</Button>
+        <WebBrowser Grid.Column="1" Name="MainBrowser" />
+
+    </Grid>
+</Window>
